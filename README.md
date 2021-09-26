@@ -1,5 +1,6 @@
-# stand-up-comedy
+# laughter-detection
 
+### UPDATE(August 2021):
 * The library has been updated to use a newer detection model that is more accurate and more robust to background noise. It also now uses Pytorch instead of Tensorflow. An older version of the software from the 2018 paper is still available [here](https://github.com/jrgillick/laughter-detection/tree/v1.0).
 
 ## Overview
@@ -8,12 +9,17 @@ This library contains code and models to automatically detect and segment region
 
 This library also includes [annotations](data/audioset/annotations/clean_laughter_annotations.csv) for evaluating laughter detection in real-world environments using the [AudioSet](https://research.google.com/audioset/) dataset.
 
+Code, Annotations and Models are described in the following papers:
+
+- Jon Gillick, Wesley Deng, Kimiko Ryokai, and David Bamman, "Robust Laughter Detection in Noisy Environments" (2021), Interspeech 2021.
+- Kimiko Ryokai, Elena Durán López, Noura Howell, Jon Gillick, and David Bamman (2018), "Capturing, Representing, and Interacting with Laughter," CHI 2018
+
 
 ## Installation
 
 ```sh
-git clone https://github.com/poorna0601/stand-up-comedy.git
-cd stand-up-comedy
+git clone https://github.com/jrgillick/laughter-detection.git
+cd laughter-detection
 pip install -r requirements.txt
 ```
 
@@ -43,3 +49,4 @@ pip install -r requirements.txt
 
 # Evaluation
 - Code and results for the experiments in the Interspeech 2021 paper are included [here](scripts/Evaluation).
+
